@@ -1,0 +1,154 @@
+body {
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 4fr;
+    margin: 0;
+    height: 100vh;
+    font-family: monospace;
+}
+
+img {
+    height: 100px;
+}
+
+svg {
+    height: 2rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: rgb(67, 153, 211);
+    display: grid;
+    align-content: flex-start;
+    gap: 50px;
+    padding: 20px;
+    color: white;
+}
+
+.logo {
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content 1fr;
+    font-size:2rem;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo svg {
+    height: 3rem;
+    fill: white;
+}
+
+.sidebar li {
+    font-size: 1.25rem;
+}
+
+.sidebar li:hover {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: pink;
+}
+
+.header {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: white;
+    display: grid;
+    padding: 25px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: max-content max-content;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: rgb(221, 221, 221);
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 20px;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column: 1;
+    align-items: center;
+}
+
+.header-top-right {
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-self: flex-end;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.25rem;
+}
+
+.header-top-right img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header-bottom-left {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+}
+
+.header-bottom-left img {
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.header ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.header li {
+    background-color: rgb(67, 153, 211);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.header li:hover {
+    cursor: pointer;
+    background-color: pink;
+}
+
+.greeting {
+    font-size: 1.1rem;
+}
+
+.user {
+    font-size: 1.3rem;
+}
+
+.main-content {
+    background-color: rgb(182, 182, 182);
+}
+
+
+
+
+
